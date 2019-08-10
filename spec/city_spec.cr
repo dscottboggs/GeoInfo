@@ -3,7 +3,7 @@ describe GeoInfo::City do
   describe ".constructors" do
     it "finds by city, state, and country" do
       GeoInfo::City
-        .new(city: "Lachute", state: "Quebec", country_code: "CA")
+        .new(city: "Lachute", state: "Quebec", country: "CA")
         .latitude
         .should eq "45.6501"
     end

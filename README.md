@@ -1,6 +1,5 @@
 # geoinfo
-
-TODO: Write a description here
+Geocoding and reverse-geocoding from the `geo-info.co` API in Crystal.
 
 ## Installation
 
@@ -9,7 +8,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      geoinfo:
-       github: your-github-user/geoinfo
+       github: dscottboggs/geoinfo
    ```
 
 2. Run `shards install`
@@ -18,17 +17,15 @@ TODO: Write a description here
 
 ```crystal
 require "geoinfo"
+GeoInfo::City.new(city: "New York", state: "New York", country: "US")
 ```
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+See `src/city.cr` for members available, and `spec/city_spec.cr` for more
+detailed usage examples.
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/geoinfo/fork>)
+1. Fork it (<https://github.com/dscottboggs/geoinfo/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +33,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Scott Boggs](https://github.com/your-github-user) - creator and maintainer
+- [Scott Boggs](https://github.com/dscottboggs) - creator and maintainer

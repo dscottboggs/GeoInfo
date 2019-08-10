@@ -20,11 +20,11 @@ module GeoInfo
     @[JSON::Field(key: "stateCode")]
     property state_code : String
     property nearby : Array(City)?
-    def self.new(*, city : String, state : String, country_code : String) : self
+    def self.new(*, city : String, state : String, country country_code : String) : self
       new address: GeoInfo::ADDRESS + city + ',' + state + ',' + country_code
     end
-    def self.new(*, zip zip_code : String, country : String)
-      new address: GeoInfo::ADDRESS + zip_code + ',' + country
+    def self.new(*, zip zip_code : String, country country_code : String)
+      new address: GeoInfo::ADDRESS + zip_code + ',' + country_code
     end
     def self.new(*, latitude : String, longitude : String)
       new address: GeoInfo::ADDRESS + latitude + ',' + longitude
