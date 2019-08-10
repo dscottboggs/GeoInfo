@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.0">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "";
+</script>
+
+  <meta id="repository-name" content="github.com/dscottboggs/GeoInfo">
+  <title>README - github.com/dscottboggs/GeoInfo</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/dscottboggs/GeoInfo/GeoInfo" data-name="geoinfo">
+      <a href="GeoInfo.html">GeoInfo</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/dscottboggs/GeoInfo/GeoInfo/City" data-name="geoinfo::city">
+      <a href="GeoInfo/City.html">City</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1>geoinfo</h1>
+
+<p>Geocoding and reverse-geocoding from the <code>geo-info.co</code> API in Crystal.</p>
+
+<h2>Installation</h2>
+
+<ol><li>Add the dependency to your <code>shard.yml</code>:</li></ol>
+
+<p><code></code>`yaml
+   dependencies:</p>
+
+<pre><code> geoinfo:
+   github: dscottboggs<span class="s">/geoinfo</code></pre>
+
+<p><code></code>`</p>
+
+<ol><li>Run <code>shards install</code></li></ol>
+
+<h2>Usage</h2>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;geoinfo&quot;</span>
+<span class="t">GeoInfo</span><span class="t">::</span><span class="t">City</span>.<span class="k">new</span>(city: <span class="s">&quot;New York&quot;</span>, state: <span class="s">&quot;New York&quot;</span>, country: <span class="s">&quot;US&quot;</span>)</code></pre>
+
+<p>See <code>src/city.cr</code> for members available, and <code>spec/city_spec.cr</code> for more
+detailed usage examples.</p>
+
+<h2>Contributing</h2>
+
+<ol><li>Fork it (&lt;https://github.com/dscottboggs/geoinfo/fork>)</li><li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li><li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li><li>Push to the branch (<code>git push origin my-new-feature</code>)</li><li>Create a new Pull Request</li></ol>
+
+<h2>Contributors</h2>
+
+<ul><li><a href="https://github.com/dscottboggs" target="_blank">Scott Boggs</a> - creator and maintainer</li></ul>
+</div>
+</body>
+</html>
