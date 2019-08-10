@@ -1,6 +1,6 @@
 require "json"
 require "http"
-module Geoinfo
+module GeoInfo
   ADDRESS = "https://geo-info.co/"
   struct City
     include JSON::Serializable
@@ -21,13 +21,13 @@ module Geoinfo
     property state_code : String
     property nearby : Array(City)?
     def self.new(*, city : String, state : String, country_code : String) : self
-      new address: Geoinfo::ADDRESS + city + ',' + state + ',' + country_code
+      new address: GeoInfo::ADDRESS + city + ',' + state + ',' + country_code
     end
     def self.new(*, zip zip_code : String, country : String)
-      new address: Geoinfo::ADDRESS + zip_code + ',' + country
+      new address: GeoInfo::ADDRESS + zip_code + ',' + country
     end
     def self.new(*, latitude : String, longitude : String)
-      new address: Geoinfo::ADDRESS + latitude + ',' + longitude
+      new address: GeoInfo::ADDRESS + latitude + ',' + longitude
     end
     private def self.new(*, address : String) : self
       response = HTTP::Client.get address

@@ -1,4 +1,4 @@
 require "./city"
-module Geoinfo
+module GeoInfo
 
 end
