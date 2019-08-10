@@ -1,0 +1,9 @@
+name: geoinfo
+version: 0.1.0
+
+authors:
+  - Scott Boggs <scott@tams.tech>
+
+crystal: 0.30.0
+
+license: MIT
